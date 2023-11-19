@@ -18,6 +18,7 @@ export function Rating(props: RatingPropsType) {
                     <Star selected={false}/>
                     <Star selected={false}/>
                     <Star selected={false}/>
+                    <Star selected={false}/>
                 </div>
             )
         case 2:
@@ -25,6 +26,7 @@ export function Rating(props: RatingPropsType) {
                 <div>
                     <Star selected={true}/>
                     <Star selected={true}/>
+                    <Star selected={false}/>
                     <Star selected={false}/>
                     <Star selected={false}/>
                     <Star selected={false}/>
@@ -38,6 +40,7 @@ export function Rating(props: RatingPropsType) {
                     <Star selected={true}/>
                     <Star selected={false}/>
                     <Star selected={false}/>
+                    <Star selected={false}/>
                 </div>
             )
         case 4:
@@ -47,6 +50,7 @@ export function Rating(props: RatingPropsType) {
                     <Star selected={true}/>
                     <Star selected={true}/>
                     <Star selected={true}/>
+                    <Star selected={false}/>
                     <Star selected={false}/>
                 </div>
             )
@@ -58,11 +62,24 @@ export function Rating(props: RatingPropsType) {
                     <Star selected={true}/>
                     <Star selected={true}/>
                     <Star selected={true}/>
+                    <Star selected={false}/>
+                </div>
+            )
+        case 6:
+            return (
+                <div>
+                    <Star selected={true}/>
+                    <Star selected={true}/>
+                    <Star selected={true}/>
+                    <Star selected={true}/>
+                    <Star selected={true}/>
+                    <Star selected={true}/>
                 </div>
             )
         default:
             return (
                 <div>
+                    <Star selected={false}/>
                     <Star selected={false}/>
                     <Star selected={false}/>
                     <Star selected={false}/>
